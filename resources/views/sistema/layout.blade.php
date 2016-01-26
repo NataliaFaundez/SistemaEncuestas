@@ -56,28 +56,22 @@
             <ul class="nav nav-stacked">
                 <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Settings <i class="glyphicon glyphicon-chevron-down"></i></a>
                     <ul class="nav nav-stacked collapse in" id="userMenu">
-                        <li class="active"> <a href="#"><i class="glyphicon glyphicon-home"></i> Administrar clientes</a></li>
+                        <li class="active"> <a href="/sistema/clientes"><i class="glyphicon glyphicon-home"></i> Administrar clientes</a></li>
                         <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> Administrar usuarios </span></a></li>
                         
                     </ul>
                 </li>  
             </ul>
-
         </div>
         <!-- /col-3 -->
         <div class="col-sm-9">
-
-            <!-- column 2 -->
-        
+            <!-- column 2 -->        
             <a href="#"><strong><i class="glyphicon glyphicon-dashboard"></i> My Dashboard</strong></a>
             <hr>
 
             <div class="row">
                 <!-- center left-->
                 <div class="col-md-6">
-                   
-
-
                     <!--tabs-->
                     <div class="panel">
                          <div class="panel panel-default">
@@ -120,13 +114,9 @@
                             </form>
                         </div>
                         <!--/panel content-->
+                    </div>                       
                     </div>
-                       
-                    </div>
-                    <!--/tabs-->
-
-                    <hr>
-                    
+                    <hr>                    
                 </div>
                 <!--/col-->
                 <div class="col-md-6">
@@ -135,82 +125,37 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Visits</th>
-                                    <th>ROI</th>
-                                    <th>Source</th>
+                                    <th>Nombre o Razon social</th>
+                                    <th>Rut</th>
+                                    <th>Acciones</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>45</td>
-                                    <td>2.45%</td>
-                                    <td>Direct</td>
+                                    <td>Aphix</td>
+                                    <td>11.111.111-1</td>
+                                    <td>
+	                                    <a class="btn btn-warning" href="#">
+					                        Editar
+					                        <span class="glyphicon glyphicon-pencil"></span>
+					                    </a>
+					                    <a class="btn btn-danger" href="#">
+					                        Eliminar 
+					                        <span class="glyphicon glyphicon-remove"></span>
+					                    </a>	 			
+				                    </td>
+                                </tr>                                
                                 </tr>
-                                <tr>
-                                    <td>289</td>
-                                    <td>56.2%</td>
-                                    <td>Referral</td>
-                                </tr>
-                                <tr>
-                                    <td>98</td>
-                                    <td>25%</td>
-                                    <td>Type</td>
-                                </tr>
-                                <tr>
-                                    <td>..</td>
-                                    <td>..</td>
-                                    <td>..</td>
-                                </tr>
-                                <tr>
-                                    <td>..</td>
-                                    <td>..</td>
-                                    <td>..</td>
-                                </tr>
-                            </tbody>
+                             </tbody>
                         </table>
                     </div>
                     </div>
-                    
-                   
-                    <!--/panel-->
-
-                    
-
                 </div>
-                <!--/col-span-6-->
-
-            </div>
-            <!--/row-->
-
-           
-
-            
-        </div>
-        <!--/col-span-9-->
-    </div>
-</div>
-<!-- /Main -->
-
-
-<div class="modal" id="addWidgetModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Add Widget</h4>
-            </div>
-            <div class="modal-body">
-                <p>Add a widget stuff here..</p>
-            </div>
-            <div class="modal-footer">
-                <a href="#" data-dismiss="modal" class="btn">Close</a>
-                <a href="#" class="btn btn-primary">Save changes</a>
             </div>
         </div>
-        <!-- /.modal-content -->
     </div>
-    <!-- /.modal-dalog -->
 </div>
+
 <!-- /.modal -->
 	<!-- script references -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>

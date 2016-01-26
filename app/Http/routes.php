@@ -11,10 +11,13 @@
 |
 */
 
-Route::get("/sistema/comun", function () {
+Route::get(" ", function () {
     return view('/sistema/layout');
 });
 
+Route::get("/sistema/clientes", function () {
+    return view('/sistema/clientes');
+});
 
 
 /*
