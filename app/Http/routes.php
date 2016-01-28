@@ -24,6 +24,39 @@ Route::get("/sistema/usuarios", function () {
 });
 
 
+Route::get("/cliente/administrador", function () {
+    return view('/cliente/layout');
+});
+
+Route::get("/cliente/proyecto", function () {
+    return view('/cliente/proyecto');
+});
+
+Route::get("/cliente/usuarios", function () {
+    return view('/cliente/usuarios');
+});
+
+Route::get("/cliente/zonaEncuestador", function () {
+    return view('/cliente/zonaEncuestador');
+});
+
+Route::get("/cliente/controlador", function () {
+    return view('/cliente/controlador');
+});
+
+Route::get("/cliente/encuestas", function () {
+    return view('/cliente/encuestas');
+});
+
+Route::get("/cliente/editar", function () {
+    return view('/cliente/editar/layout');
+});
+
+Route::get("/cliente/add", function () {
+    return view('/cliente/add');
+});
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes

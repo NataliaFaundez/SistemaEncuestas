@@ -22,7 +22,7 @@
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
 		            </button>
-		            <a class="navbar-brand" href="#">Administrador de sistema</a>
+		            <a class="navbar-brand" href="/">Administrador de sistema</a>
 		        </div>
 		        <div class="navbar-collapse collapse">
 		            <ul class="nav navbar-nav navbar-right">
@@ -54,10 +54,10 @@
 		            <hr>
 
 		            <ul class="nav nav-stacked">
-		                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Settings <i class="glyphicon glyphicon-chevron-down"></i></a>
+		                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Administrar <i class="glyphicon glyphicon-list"></i></a>
 		                    <ul class="nav nav-stacked collapse in" id="userMenu">
-		                        <li class="active"> <a href="/sistema/clientes"><i class="glyphicon glyphicon-home"></i> Administrar clientes</a></li>
-		                        <li><a href="/sistema/usuarios"><i class="glyphicon glyphicon-envelope"></i> Administrar usuarios </span></a></li>
+		                        <li class="active"> <a href="/sistema/clientes"><i class="glyphicon glyphicon-lock"></i> Clientes</a></li>
+		                        <li><a href="/sistema/usuarios"><i class="glyphicon glyphicon-user"></i> Usuarios </span></a></li>
 		                        
 		                    </ul>
 		                </li>  
