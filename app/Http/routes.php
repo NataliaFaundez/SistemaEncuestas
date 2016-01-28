@@ -56,6 +56,23 @@ Route::get("/cliente/add", function () {
     return view('/cliente/add');
 });
 
+Route::get("/encuestador", function () {
+    return view('encuestador');
+});
+
+Route::get("/encuestador1", function () {
+
+    return view('encuestador1');
+});
+
+Route::get("/controlador/ver", function () {
+    return view('/controlador');
+});
+
+Route::get("/controlador/ingresar", function () {
+    return view('/controlador1');
+});
+
 
 /*
 |--------------------------------------------------------------------------
