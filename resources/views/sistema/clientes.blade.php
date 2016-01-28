@@ -4,36 +4,87 @@
 
 
 <div class="row">
-	<div class="col-md-3 col-md-offset-8">
-		<button type="button" class="btn btn-primary btn-lg">Large button</button>
+	<!-- center left-->
+	<div class="col-md-6">
+		<!--tabs-->
+		<div class="panel">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="panel-title">
+					<i class="glyphicon glyphicon-wrench pull-right"></i>
+					<h4>Agregar Clientes</h4>
+					</div>
+				</div>
+				<div class="panel-body">
+					<form class="form form-vertical">
+						<div class="control-group">
+							<label>Nombre o Razon Social</label>
+							<div class="controls">
+								<input type="text" class="form-control" placeholder="Enter Name">
+							</div>
+						</div>
+						<div class="control-group">
+							<label>Rut</label>
+							<div class="controls">
+								<input type="text" class="form-control" placeholder="Enter Name">
+							</div>
+						</div>
+						<!--<div class="control-group">
+						<label>Category</label>
+						<div class="controls">
+						<select class="form-control">
+						<option>options</option>
+						</select>
+						</div>
+						</div>-->
+							<div class="control-group">						
+								<div class="controls">
+									<button type="submit" class="btn btn-primary">
+									Ingresar
+									</button>
+								</div>
+							</div>
+					</form>
+				</div>
+			<!--/panel content-->
+			</div>                       
+		</div>
+		<hr>                    
 	</div>
-	  <div class="col-md-5 col-md-offset-4">
-		<table class="table table-bordered">	  
-			<thead>
-				<tr>
-					<th>Nombre o Razon social</th>
-					<th>Rut</th>
-					<th>Accion</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td></td>
-					<td></td>
-					<td>                            
-	                    <a class="btn btn-warning" href="#">
-	                        Editar
-	                        <span class="glyphicon glyphicon-pencil"></span>
-	                    </a>
-	                    <a class="btn btn-danger" href="#">
-	                        Eliminar 
-	                        <span class="glyphicon glyphicon-remove"></span>
-	                    </a> 
-	                </td>
-				</tr>
-			</tbody>
-		</table>
-	  </div>
+			<!--/col-->
+
+		<div class="col-md-6">
+			<div class="panel panel-default">
+				<div class="table-responsive">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+							<th>Nombre o Razon social</th>
+							<th>Rut</th>
+							<th>Acciones</th>
+							</tr>
+						</thead>
+
+						<tbody>
+						<tr>
+							<td>Aphix</td>
+							<td>11.111.111-1</td>
+							<td>
+							<a class="btn btn-warning" href="#">
+							Editar
+							<span class="glyphicon glyphicon-pencil"></span>
+							</a>
+							<a class="btn btn-danger" href="#">
+							Eliminar 
+							<span class="glyphicon glyphicon-remove"></span>
+							</a>	 			
+							</td>										                               
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
 </div>
 
 @endsection

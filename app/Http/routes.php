@@ -19,6 +19,10 @@ Route::get("/sistema/clientes", function () {
     return view('/sistema/clientes');
 });
 
+Route::get("/sistema/usuarios", function () {
+    return view('/sistema/usuarios');
+});
+
 
 /*
 |--------------------------------------------------------------------------

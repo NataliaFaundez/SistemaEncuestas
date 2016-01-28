@@ -56,9 +56,15 @@
 		            <ul class="nav nav-stacked">
 		                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Settings <i class="glyphicon glyphicon-chevron-down"></i></a>
 		                    <ul class="nav nav-stacked collapse in" id="userMenu">
-		                        <li class="active"> <a href="/sistema/clientes"><i class="glyphicon glyphicon-home"></i> Administrar clientes</a></li>
-		                        <li><a href="/sistema/usuarios"><i class="glyphicon glyphicon-envelope"></i> Administrar usuarios </span></a></li>
-		                        
+		                        <li class="active"> <a href=""><i class="glyphicon glyphicon-home"></i> Proyectos</a></li>
+		                        <li><a href=""><i class="glyphicon glyphicon-envelope"></i> 
+		                        Usuarios</a></li>
+		                        <li><a href=""><i class="glyphicon glyphicon-envelope"></i> 
+		                        Zona de encuestador</a></li>		
+		                        <li><a href=""><i class="glyphicon glyphicon-envelope"></i> 
+		                        Controlador</a></li>	   
+		                        <li><a href=""><i class="glyphicon glyphicon-envelope"></i> 
+		                        Encuestas y Controles</a></li>	                       
 		                    </ul>
 		                </li>  
 		            </ul>
