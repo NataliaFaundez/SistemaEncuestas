@@ -8,8 +8,7 @@
         <div class="panel panel-primary">
             <div class="panel-body">   
             <form class="form-horizontal" method="POST" action="/encuestas/addsave">
-                {{ csrf_field() }}
-            
+                {{ csrf_field() }}            
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">Folio</label>
                     <div class="col-sm-4">
@@ -18,15 +17,13 @@
                     <div class="col-sm-1">
                         <input type="text" class="form-control" name="folio_b" placeholder=" ">
                     </div>                
-                </div>
-              
+                </div>              
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">Rut Encuestador</label>
                     <div class="col-sm-5">
                         <input type="text" class="form-control" name="rut_encuestador" placeholder=" ">
                     </div>
                 </div>
-
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">Región</label>
                     <div class="col-sm-5">                          
@@ -49,8 +46,6 @@
                         </select>
                     </div>
                 </div>
-
-
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">Direccion</label>
                     <div class="col-sm-5">
@@ -58,21 +53,18 @@
                         <span class="help-block">TODO CON MAYUSCULAS</span>
                     </div>
                 </div>
-
                  <div class="form-group">
                     <label for="" class="col-sm-2 control-label">Numero</label>
                     <div class="col-sm-5">
                       <input type="text" name="numero" class="form-control"  placeholder=" ">
                     </div>
                  </div>
-
                  <div class="form-group">
                     <label for="" class="col-sm-2 control-label">Block</label>
                     <div class="col-sm-5">
                         <input type="text" name="block" class="form-control" placeholder=" ">
                     </div>
                  </div>
-
                  <div class="form-group">
                     <label for="" class="col-sm-2 control-label">Depto/Casa</label>
                     <div class="col-sm-5">
@@ -122,7 +114,6 @@
                         </select>
                     </div>
                  </div>
-
                  <div class="form-group">
                     <label for="" class="col-sm-2 control-label">Vehiculos</label>
                         <div class="col-sm-5">
@@ -142,9 +133,7 @@
                             <input type="checkbox" id="inlineCheckbox3" value="ninguno"> ninguno
                         </label>              
                     </div>
-                 </div>
-                 
-
+                 </div>               
                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">Observacion</label>
                     <div class="col-sm-5">
@@ -152,16 +141,14 @@
                       <span class="help-block">TODO CON MAYUSCULAS</span>
                     </div>
                 </div>
-
+                <BR>
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <button type="submit" class="btn btn-primary btn-lg">Ingresar Encuesta</button>
                     </div> 
                 </div>
-
                 @if ( isset($errors) )
         @if (count($errors) > 0)
-
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
                 <div class="alert alert-info">
@@ -170,22 +157,15 @@
                             <li>{{ $error }}</li>
                         @endforeach
                     </ul>
-                </div>
-        
+                </div>        
             </div>
         </div>
         @endif
-    @endif
-             
+    @endif             
             </form>
-
         </div>
     </div>
-
-
     </div>
 </div>
-
 </nav>  
  @endsection
-

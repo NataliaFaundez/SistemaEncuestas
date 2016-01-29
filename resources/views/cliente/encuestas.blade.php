@@ -3,10 +3,8 @@
 @section('content')
 
 <div class="row">
-	<!-- center left-->
-	
+	<!-- center left-->	
 			<!--/col-->
-
 		<div class="col-md-6">
 			<div class="input-group">
 		      <input type="text" class="form-control" placeholder="Search for...">
@@ -25,7 +23,6 @@
 							<th>Acciones</th>
 							</tr>
 						</thead>
-
 						<tbody>
 						<tr>
 							<td>12343-3</td>
@@ -55,7 +52,4 @@
 			</div>
 		</div>
 </div>
-
-
-
 @endsection

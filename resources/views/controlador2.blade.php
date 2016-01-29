@@ -147,17 +147,13 @@
                           <input type="text" name="contacto2" class="form-control" placeholder="Ingrese Nombre ">
                           <span class="help-block">TODO CON MAYUSCULAS</span>
                         </div>
-                     </div>
-
-                  
-
-
-
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
-                            <button type="submit" class="btn btn-primary btn-lg">Ingresar Encuesta</button>
-                        </div> 
-                    </div>
+                     </div>      
+                     <BR>
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <button type="submit" class="btn btn-primary btn-lg">Ingresar Encuesta</button>
+                            </div> 
+                        </div>
 
                     @if ( isset($errors) )
                          @if (count($errors) > 0)

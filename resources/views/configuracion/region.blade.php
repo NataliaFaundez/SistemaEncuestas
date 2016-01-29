@@ -1,5 +1,4 @@
 @extends('cliente.layout')
-
 @section('content')
 
 <div class="row">
@@ -10,37 +9,40 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<div class="panel-title">
-					<h4>Agregar Controlador</h4>
+					<h4>Agregar Encuestador</h4>
 					</div>
 				</div>
 				<div class="panel-body">
 					<form class="form form-vertical">
 						<div class="control-group">
-							<label>Nombre</label>
-							<div class="controls">
-								<select class="form-control">
-									<option>Juanito</option>
-									<option>Pepito</option>
-								</select>
-							</div>
+						<label>Encuestador</label>
+						<div class="controls">
+							<select class="form-control">
+								<option>Juanito</option>
+								<option>Pedrito</option>
+							</select>
+						</div>
 						</div>
 						<div class="control-group">
-						<label>Rango</label>
+						<label>Agregar région</label>						
 							<div class="controls">
-								<select class="form-control">
-									<option>00.000.000-0  a 01.111.111-1</option>
-									<option>otros</option>
-								</select>
+								<input type="text" class="form-control" placeholder="Enter Name">
+							</div>	
+							</div>					
+						<div class="control-group">
+						<label>Agregar Region</label>						
+							<div class="controls">
+								<input type="text" class="form-control" placeholder="Enter Name">
+							</div>	
+							</div>						
+						<BR>
+						<div class="control-group">						
+							<div class="controls">
+								<button type="submit" class="btn btn-primary">
+								Ingresar
+								</button>
 							</div>
 						</div>
-						<BR>
-							<div class="control-group">						
-								<div class="controls">
-									<button type="submit" class="btn btn-primary">
-									Ingresar
-									</button>
-								</div>
-							</div>
 					</form>
 				</div>
 			<!--/panel content-->
@@ -62,16 +64,20 @@
 					<table class="table table-striped">
 						<thead>
 							<tr>
-							<th>Nombre</th>
-							<th>Rango</th>
+							<th>Región</th>
+							<th>Comuna</th>
 							<th>Acciones</th>
 							</tr>
 						</thead>
 						<tbody>
 						<tr>
-							<td>Pepito</td>
-							<td>00.000.000-0  a 01.111.111-1</td>
+							<td>Metropolitana</td>
+							<td>Stgo centro</td>
 							<td>
+							<a class="btn btn-success" href="#">
+								Mostrar
+							<span class="glyphicon glyphicon-eye-open"></span>
+							</a>
 							<a class="btn btn-warning" href="#">
 								Editar
 							<span class="glyphicon glyphicon-pencil"></span>

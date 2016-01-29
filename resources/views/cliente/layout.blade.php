@@ -78,7 +78,38 @@
 			@endif 
 		<!-- /Header -->
 
+		<!--aqui va el if para cambiar el menu en configuracion-->
+		<?php
+//if (select == <li><a href="#">Configuracion</a></li>) {
+  
+/*
+<div class="container-fluid">
+		    <div class="row">
+		        <div class="col-sm-3">
+		            
+		             ..Left column ..
+		            
+		            <a href="#"><strong><i class="glyphicon glyphicon-wrench"></i> Tools</strong></a>
 
+		            <hr>
+
+		            <ul class="nav nav-stacked">
+		                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Opciones <span class="glyphicon glyphicon-list"></span></a>
+		                    <ul class="nav nav-stacked collapse in" id="userMenu">
+		                        <li class="active"> <a href="/cliente/proyecto"><i class="glyphicon glyphicon-home"></i> 
+		                        	Proyectos</a></li>
+		                        <li><a href="/cliente/usuarios"><i class="glyphicon glyphicon-envelope"></i> 
+		                        	Modificar Region, Comuna</a></li>
+		                        <li><a href="/cliente/zonaEncuestador"><i class="glyphicon glyphicon-envelope"></i> 
+		                        	Modificar Encuesta/a></li>		
+		                       	 		                       
+		                    </ul>
+		                </li>  
+		            </ul>
+		        </div>
+		
+		 }*/
+?>
 
 		<!-- Main -->
 		<div class="container-fluid">

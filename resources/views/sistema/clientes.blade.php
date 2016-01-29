@@ -49,11 +49,9 @@
 				</div>
 			<!--/panel content-->
 			</div>                       
-		</div>
-		<hr>                    
+		</div>                   
 	</div>
 			<!--/col-->
-
 		<div class="col-md-6">  
 		    <div class="input-group">
 		      <input type="text" class="form-control" placeholder="Search for...">
@@ -72,7 +70,6 @@
 							<th>Acciones</th>
 							</tr>
 						</thead>
-
 						<tbody>
 						<tr>
 							<td>Aphix</td>
@@ -94,7 +91,4 @@
 			</div>
 		</div>
 </div>
-
-
-
 @endsection

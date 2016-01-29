@@ -52,6 +52,7 @@
 						</select>
 						</div>
 						</div>
+						<BR>
 							<div class="control-group">						
 								<div class="controls">
 									<button type="submit" class="btn btn-primary">
@@ -67,7 +68,6 @@
 		<hr>                    
 	</div>
 			<!--/col-->
-
 		<div class="col-md-6">
 			<div class="input-group">
 		      <input type="text" class="form-control" placeholder="Search for...">
@@ -86,7 +86,6 @@
 							<th>Acciones</th>
 							</tr>
 						</thead>
-
 						<tbody>
 						<tr>
 							<td>Aphix</td>
@@ -112,5 +111,4 @@
 			</div>
 		</div>
 </div>
-
 @endsection

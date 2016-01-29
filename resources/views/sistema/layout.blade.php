@@ -43,22 +43,19 @@
 		    <!-- /container -->
 		</div>
 		<!-- /Header -->
-
 		<!-- Main -->
 		<div class="container-fluid">
 		    <div class="row">
 		        <div class="col-sm-3">
 		            <!-- Left column -->
 		            <a href="#"><strong><i class="glyphicon glyphicon-wrench"></i> Tools</strong></a>
-
 		            <hr>
-
 		            <ul class="nav nav-stacked">
 		                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Administrar <i class="glyphicon glyphicon-list"></i></a>
 		                    <ul class="nav nav-stacked collapse in" id="userMenu">
 		                        <li class="active"> <a href="/sistema/clientes"><i class="glyphicon glyphicon-lock"></i> Clientes</a></li>
 		                        <li><a href="/sistema/usuarios"><i class="glyphicon glyphicon-user"></i> Usuarios </span></a></li>
-		                        
+		                    
 		                    </ul>
 		                </li>  
 		            </ul>
@@ -68,14 +65,12 @@
 		            <!-- column 2 -->        
 		            <a href="#"><strong><i class="glyphicon glyphicon-dashboard"></i> My Dashboard</strong></a>
 		            <hr>
-<!--
-		            
+<!--		            
 		        </div>
 		    </div>
 		</div>
 -->
 		@yield('content')
-
 		<!-- /.modal -->
 		<!-- script references -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>

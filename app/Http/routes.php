@@ -90,6 +90,7 @@ Route::get("/controlador/ingresar", function () {
 
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
