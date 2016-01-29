@@ -37,6 +37,7 @@
 						</select>
 						</div>
 						</div>-->
+						<BR>
 							<div class="control-group">						
 								<div class="controls">
 									<button type="submit" class="btn btn-primary">
@@ -53,7 +54,14 @@
 	</div>
 			<!--/col-->
 
-		<div class="col-md-6">
+		<div class="col-md-6">  
+		    <div class="input-group">
+		      <input type="text" class="form-control" placeholder="Search for...">
+		      <span class="input-group-btn">
+		        <button class="btn btn-default" type="button">Go!</button>
+		      </span>
+		    </div><!-- /input-group -->
+			<BR>  
 			<div class="panel panel-default">
 				<div class="table-responsive">
 					<table class="table table-striped">
@@ -86,5 +94,7 @@
 			</div>
 		</div>
 </div>
+
+
 
 @endsection

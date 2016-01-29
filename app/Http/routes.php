@@ -65,13 +65,29 @@ Route::get("/encuestador1", function () {
     return view('encuestador1');
 });
 
+Route::get("/encuestador2", function () {
+
+    return view('encuestador2');
+});
+
+Route::get("/controlador", function () {
+
+    return view('controlador');
+});
+
 Route::get("/controlador/ver", function () {
-    return view('/controlador');
+
+    return view('controlador1');
 });
 
 Route::get("/controlador/ingresar", function () {
-    return view('/controlador1');
+
+    return view('controlador2');
 });
+
+
+
+
 
 
 /*

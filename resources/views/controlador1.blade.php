@@ -26,7 +26,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/encuestador">Encuestador</a>
+                    <a class="navbar-brand" href="/controlador">Controlador</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -46,10 +46,9 @@
                     </ul>
                 </div>
             </div>
-        </div>
-
-
-        <div class="container-fluid">
+        </div>    
+        
+           <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-3">
                     <!-- Left column -->
@@ -60,20 +59,59 @@
                     <ul class="nav nav-stacked">
                         <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Opciones <span class="glyphicon glyphicon-list"></span></a>
                             <ul class="nav nav-stacked collapse in" id="userMenu">
-                                <li class="active"> <a href="/encuestador1"><i class="glyphicon glyphicon-home"></i> 
+                                <li class="active"> <a href="/controlador/ver"><i class="glyphicon glyphicon-home"></i> 
                                     Ver encuesta</a></li>
-                                <li><a href="/encuestador2"><i class="glyphicon glyphicon-envelope"></i> 
+                                <li><a href="/controlador/ingresar"><i class="glyphicon glyphicon-envelope"></i> 
                                     Ingresar encuesta</a></li>                                
                             </ul>
                         </li>  
                     </ul>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
-</html>
 
+             <div class="col-sm-6">
+                <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+              </span>
+            </div><!-- /input-group -->
+            <BR>  
+                        <div class="panel panel-default">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                        <th>Proyecto</th>
+                                        <th>Folio</th>
+                                        <th>Estado</th>
+                                        <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>Aphix</td>
+                                        <td>Práctica</td>
+                                        <td> boton si/no </td>
+                                        <td>
+                                        <a class="btn btn-success" href="#">
+                                            Mostrar
+                                        <span class="glyphicon glyphicon-eye-open"></span>
+                                        </a>
+                                        <a class="btn btn-warning" href="#">
+                                            Editar
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                        </a>
+                                        <a class="btn btn-danger" href="#">
+                                            Eliminar 
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                        </a>                
+                                        </td>                                                                      
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>                     
+             </div>
 
 

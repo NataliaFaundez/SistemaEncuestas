@@ -113,12 +113,12 @@
 		            <!-- column 2 -->        
 		            <a href="#"><strong><i class="glyphicon glyphicon-dashboard"></i> My Dashboard</strong></a>
 		            <hr>
-
+<!--
 		            
 		        </div>
 		    </div>
 		</div>
-
+-->
 		@yield('content')
 
 		<!-- /.modal -->

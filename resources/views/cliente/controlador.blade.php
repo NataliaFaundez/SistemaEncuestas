@@ -18,7 +18,10 @@
 						<div class="control-group">
 							<label>Nombre</label>
 							<div class="controls">
-								<input type="text" class="form-control" placeholder="Enter Name">
+								<select class="form-control">
+									<option>Juanito</option>
+									<option>Pepito</option>
+								</select>
 							</div>
 						</div>
 						<div class="control-group">
@@ -47,6 +50,13 @@
 			<!--/col-->
 
 		<div class="col-md-6">
+			<div class="input-group">
+		      <input type="text" class="form-control" placeholder="Search for...">
+		      <span class="input-group-btn">
+		        <button class="btn btn-default" type="button">Go!</button>
+		      </span>
+		    </div><!-- /input-group -->
+			<BR>  
 			<div class="panel panel-default">
 				<div class="table-responsive">
 					<table class="table table-striped">
