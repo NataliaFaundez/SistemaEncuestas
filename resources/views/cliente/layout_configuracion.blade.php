@@ -48,40 +48,13 @@
 		    </div>
 		</div>
 		    <!-- /container -->
-		    @if (isset($result))	
+		    	
 				<div class="container-fluid">
 				    <div class="row">
-				        <div class="col-sm-3">
-				            <!-- Left column -->
-				            <a href="#"><strong><i class="glyphicon glyphicon-wrench"></i> Tools</strong></a>
-				            <hr>
-				            <ul class="nav nav-stacked">
-				                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Configuracion<span class="glyphicon glyphicon-list"></span></a>
-				                    <ul class="nav nav-stacked collapse in" id="userMenu">
-				                        <li class="active"> <a href="/cliente/proyecto"><i class="glyphicon glyphicon-home"></i> 
-				                        	Agregar Zona</a></li>
-				                        <li><a href="/cliente/usuarios"><i class="glyphicon glyphicon-envelope"></i> 
-				                        	Editar encuesta</a></li>				                         		                       
-				                    </ul>
-				                </li>  
-				            </ul>
-				        </div>
-				        <!-- /col-3 -->
-				        <div class="col-sm-9">
-				            <!-- column 2 -->        
-				            <a href="#"><strong><i class="glyphicon glyphicon-dashboard"></i> My Dashboard</strong></a>
-				            <hr>				            
-				        </div>
-				    </div>
-				</div>
-
-			@endif 
-		<!-- /Header -->
-		<!-- Main -->
-		<div class="container-fluid">
-		    <div class="row">
-		        <div class="col-sm-3">
-		            <!-- Left column -->
+				         <div class="col-sm-3">
+		            
+		            
+		            
 		            <a href="#"><strong><i class="glyphicon glyphicon-wrench"></i> Tools</strong></a>
 
 		            <hr>
@@ -89,34 +62,32 @@
 		            <ul class="nav nav-stacked">
 		                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Opciones <span class="glyphicon glyphicon-list"></span></a>
 		                    <ul class="nav nav-stacked collapse in" id="userMenu">
-		                        <li class="active"> <a href="/cliente/proyecto"><i class="glyphicon glyphicon-home"></i> 
-		                        	Proyectos</a></li>
-		                        <li><a href="/cliente/usuarios"><i class="glyphicon glyphicon-envelope"></i> 
-		                        	Usuarios</a></li>
-		                        <li><a href="/cliente/zonaEncuestador"><i class="glyphicon glyphicon-envelope"></i> 
-		                        	Zona de encuestador</a></li>		
-		                        <li><a href="/cliente/controlador"><i class="glyphicon glyphicon-envelope"></i> 
-		                        	Controlador</a></li>	   
-		                        <li><a href="/cliente/encuestas"><i class="glyphicon glyphicon-envelope"></i> 
-		                        	Estado encuestas</a></li>
-		                        <li><a href="/cliente/add"><i class="glyphicon glyphicon-envelope"></i> 
-		                        	Encuesta</a></li>	 		                       
+		                        <li><a href="/config/comuna"><i class="glyphicon glyphicon-envelope"></i> 
+		                        	Modificar Region, Comuna</a></li>
+		                        <li><a href="/config/encuesta"><i class="glyphicon glyphicon-envelope"></i> 
+		                        	Modificar Encuesta</a></li>		
+		                       	 		                       
 		                    </ul>
 		                </li>  
 		            </ul>
 		        </div>
-		        <!-- /col-3 -->
-		        <div class="col-sm-9">
-		            <!-- column 2 -->        
-		            <a href="#"><strong><i class="glyphicon glyphicon-dashboard"></i> My Dashboard</strong></a>
-		            <hr>
-<!--
-		            
-		        </div>
-		    </div>
-		</div>
--->
-		@yield('content')
+				        <!-- /col-3 -->
+				        <div class="col-sm-9">
+				            <!-- column 2 -->        
+				            <a href="#"><strong><i class="glyphicon glyphicon-dashboard"></i> My Dashboard</strong></a>
+				            <hr>
+				            @yield('content')				            
+				        </div>
+				    </div>
+				</div>
+
+			
+		<!-- /Header -->
+
+		<!--aqui va el if para cambiar el menu en configuracion-->
+
+		
+		
 
 		<!-- /.modal -->
 		<!-- script references -->

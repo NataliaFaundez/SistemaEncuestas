@@ -1,4 +1,4 @@
-@extends('cliente.layout')
+@extends('cliente.layout_configuracion')
 @section('content')
 
 <div class="row">

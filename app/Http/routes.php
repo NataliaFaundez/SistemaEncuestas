@@ -88,6 +88,9 @@ Route::get("/config/comuna", function () {
     return view('/configuracion/comuna');
 });
 
+Route::get("/configuracion", function () {
+    return view('/cliente/layout_configuracion');
+});
 
 
 
