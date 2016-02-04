@@ -61,29 +61,33 @@ Route::get("/encuestador", function () {
 });
 
 Route::get("/encuestador1", function () {
-
     return view('encuestador1');
 });
 
 Route::get("/encuestador2", function () {
-
     return view('encuestador2');
 });
 
 Route::get("/controlador", function () {
-
     return view('controlador');
 });
 
 Route::get("/controlador/ver", function () {
-
     return view('controlador1');
 });
 
 Route::get("/controlador/ingresar", function () {
-
     return view('controlador2');
 });
+
+Route::get("/config/encuesta", function () {
+    return view('/configuracion/encuesta');
+});
+
+Route::get("/config/comuna", function () {
+    return view('/configuracion/comuna');
+});
+
 
 
 
