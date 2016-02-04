@@ -16,11 +16,11 @@
 					<form class="form form-vertical">
 						
 						<div class="control-group">
-						<label>Agregar comuna</label>						
+							<label>Agregar comuna</label>						
 							<div class="controls">
 								<input type="text" class="form-control" placeholder="Enter Name">
 							</div>	
-							</div>					
+						</div>					
 						
 						<div class="control-group">
 						 <label for="" >Región</label>                 
@@ -70,20 +70,20 @@
 					<form class="form form-vertical">
 						
 						<div class="control-group">
-						<label>Agregar Region</label>						
+							<label>Agregar Region</label>						
 							<div class="controls">
 								<input type="text" class="form-control" placeholder="Enter Name">
-						</div>	
+							</div>	
 						</div>	
 
 						<br>
 
 						<div class="control-group">						
-						<div class="controls">
-							<button type="submit" class="btn btn-primary">
-							Ingresar
-							</button>
-						</div>
+							<div class="controls">
+								<button type="submit" class="btn btn-primary">
+								Ingresar
+								</button>
+							</div>
 						</div>
 					</form>
 				</div>

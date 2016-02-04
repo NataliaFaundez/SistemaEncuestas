@@ -19,6 +19,7 @@ class CreateUsuariosTable extends Migration
             $table->string('clave');  
             $table->string('correo');    
             $table->string('perfil');  
+            $table->integer('cliente_id')->unsigned();
             $table->timestamps();
         });
     }

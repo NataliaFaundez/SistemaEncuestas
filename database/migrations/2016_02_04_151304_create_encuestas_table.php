@@ -20,6 +20,8 @@ class CreateEncuestasTable extends Migration
             $table->integer('folio_a');
             $table->integer('folio_b');  
             $table->string('rut');  
+            $table->integer('comuna_id')->unsigned();
+            $table->integer('proyecto_id')->unsigned();
 
             $table->timestamps();
         });
