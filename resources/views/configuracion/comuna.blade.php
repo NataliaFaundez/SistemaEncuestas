@@ -9,14 +9,14 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<div class="panel-title">
-					<h4>Editar Comuna</h4>
+					<h4>Agregar comuna</h4>
 					</div>
 				</div>
 				<div class="panel-body">
 					<form class="form form-vertical">
 						
 						<div class="control-group">
-							<label>Agregar comuna</label>						
+							<label>Nombre comuna</label>						
 							<div class="controls">
 								<input type="text" class="form-control" placeholder="Enter Name">
 							</div>	
@@ -59,37 +59,7 @@
 		</div>
 		<hr>  
 
-		<div class="panel">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<div class="panel-title">
-					<h4>Editar Region</h4>
-					</div>
-				</div>
-				<div class="panel-body">
-					<form class="form form-vertical">
-						
-						<div class="control-group">
-							<label>Agregar Region</label>						
-							<div class="controls">
-								<input type="text" class="form-control" placeholder="Enter Name">
-							</div>	
-						</div>	
-
-						<br>
-
-						<div class="control-group">						
-							<div class="controls">
-								<button type="submit" class="btn btn-primary">
-								Ingresar
-								</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			<!--/panel content-->
-			</div>                       
-		</div>	                  
+		                  
 	</div>
 			<!--/col-->
 		<div class="col-md-6">
@@ -115,7 +85,7 @@
 							<td>Metropolitana</td>
 							<td>Stgo centro</td>
 							<td>
-							<a class="btn btn-warning" href="#">
+							<a class="btn btn-warning" href="editcomuna">
 								Editar
 							<span class="glyphicon glyphicon-pencil"></span>
 							</a>

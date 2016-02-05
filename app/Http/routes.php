@@ -84,15 +84,25 @@ Route::get("/config/encuesta", function () {
     return view('/configuracion/encuesta');
 });
 
-Route::get("/config/comuna", function () {
-    return view('/configuracion/comuna');
-});
-
 Route::get("/configuracion", function () {
     return view('/cliente/layout_configuracion');
 });
 
+Route::get("/config/comuna", function () {
+    return view('/configuracion/comuna');
+});
 
+Route::get("/config/region", function () {
+    return view('/configuracion/region');
+});
+
+Route::get("/config/editregion", function () {
+    return view('/configuracion/editarRegion');
+});
+
+Route::get("/config/editcomuna", function () {
+    return view('/configuracion/editarComuna');
+});
 
 
 

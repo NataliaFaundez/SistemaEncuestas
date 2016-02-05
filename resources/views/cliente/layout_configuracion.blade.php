@@ -62,8 +62,10 @@
 		            <ul class="nav nav-stacked">
 		                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Opciones <span class="glyphicon glyphicon-list"></span></a>
 		                    <ul class="nav nav-stacked collapse in" id="userMenu">
-		                        <li><a href="/config/comuna"><i class="glyphicon glyphicon-envelope"></i> 
-		                        	Modificar Region, Comuna</a></li>
+		                        <li><a href="/config/region"><i class="glyphicon glyphicon-envelope"></i> 
+		                        	Administrar Region</a></li>
+		                        	<li><a href="/config/comuna"><i class="glyphicon glyphicon-envelope"></i> 
+		                        	Administrar comuna</a></li>
 		                        <li><a href="/config/encuesta"><i class="glyphicon glyphicon-envelope"></i> 
 		                        	Modificar Encuesta</a></li>		
 		                       	 		                       
