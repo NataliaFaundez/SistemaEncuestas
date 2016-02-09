@@ -102,10 +102,10 @@ Route::get("/config/editcomuna", function () {
 
 Route::get("/proyecto/eliminar/{id}", 'ProyectoController@Eliminar');
 
-Route::post("/config/region/save", 'RegionController@GetGuardar');
 Route::get("/config/region", 'RegionController@Index');
+Route::post("/config/region/save", 'RegionController@PostGuardar');
 Route::get("/config/region/eliminar/{id}", 'RegionController@Eliminar');
-
+Route::post("/config/region/editar/{id}", 'RegionController@Editar');
 
 
 /*

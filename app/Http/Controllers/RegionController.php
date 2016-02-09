@@ -13,7 +13,7 @@ use App\Region;
 class RegionController extends Controller
 {
     //
-    public function GetGuardar(Request $request){
+    public function PostGuardar(Request $request){
     	$validator = Validator::make($request->all(), [
             
             'region'  =>'required',
@@ -33,7 +33,7 @@ class RegionController extends Controller
 
         Region::create($inputs);       
 
-        return redirect('configuracion');
+        return redirect('config/region');
     }
 
     public function Index(){
@@ -41,6 +41,9 @@ class RegionController extends Controller
         return view('configuracion.region', ["regiones" => $regiones]);
     }
 
+    public function Editar($id){
+        
+    }
     /*public function Mostrar($id){
         $region = Region::findOrFail($id);
         return view('region.mostrar', ["region" => $region]);
@@ -49,6 +52,6 @@ class RegionController extends Controller
     public function Eliminar($id){       
         $region = Region::findOrFail($id);
         $region->delete();
-        return redirect('configuracion');
+        return redirect('config/region');
     }
 }
