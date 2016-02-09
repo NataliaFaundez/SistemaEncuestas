@@ -53,6 +53,8 @@
 		      </span>
 		    </div><!-- /input-group -->
 			<BR>  
+
+
 			<div class="panel panel-default">
 				<div class="table-responsive">
 					<table class="table table-striped">
@@ -70,7 +72,7 @@
 							Editar
 							<span class="glyphicon glyphicon-pencil"></span>
 							</a>
-							<a class="btn btn-danger" href="/proyecto/eliminar/{{ $proyecto->id }}">
+							<a class="btn btn-danger" href="/proyecto/eliminar/">
 							Eliminar 
 							<span class="glyphicon glyphicon-remove"></span>
 							</a>	 			

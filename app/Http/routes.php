@@ -92,10 +92,6 @@ Route::get("/config/comuna", function () {
     return view('/configuracion/comuna');
 });
 
-Route::get("/config/region", function () {
-    return view('/configuracion/region');
-});
-
 Route::get("/config/editregion", function () {
     return view('/configuracion/editarRegion');
 });
@@ -104,9 +100,11 @@ Route::get("/config/editcomuna", function () {
     return view('/configuracion/editarComuna');
 });
 
-Route::get("/proyecto/eliminar/{id}", 'EncuestaController@Eliminar');
+Route::get("/proyecto/eliminar/{id}", 'ProyectoController@Eliminar');
 
-
+Route::post("/config/region/save", 'RegionController@GetGuardar');
+Route::get("/config/region", 'RegionController@Index');
+Route::get("/config/region/eliminar/{id}", 'RegionController@Eliminar');
 
 
 

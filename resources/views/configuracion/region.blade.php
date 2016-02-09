@@ -19,7 +19,7 @@
 						<div class="control-group">
 							<label>Agregar Region</label>						
 							<div class="controls">
-								<input type="text" class="form-control" placeholder="Enter Name">
+								<input type="text" class="form-control" name="region" placeholder="Enter Name">
 							</div>	
 						</div>	
 
@@ -57,19 +57,22 @@
 							</tr>
 						</thead>
 						<tbody>
-						<tr>
-							<td>Metropolitana</td>
+						 @foreach ($regiones as $region)
+						<tr>							
+	                        <td> {{ $region -> region }} </td>            
+							
 							<td>
-							<a class="btn btn-warning" href="editregion">
+							<a class="btn btn-warning" href="/config/editregion">
 								Editar
 							<span class="glyphicon glyphicon-pencil"></span>
 							</a>
-							<a class="btn btn-danger" href="#">
+							<a class="btn btn-danger" href="/config/region/eliminar/{{ $region -> id}}">
 								Eliminar 
 							<span class="glyphicon glyphicon-remove"></span>
 							</a>	 			
 							</td>										                               
 						</tr>
+		                @endforeach
 						</tbody>
 					</table>
 				</div>
