@@ -82,7 +82,7 @@
 	                        <td> {{ $region -> region }} </td>            
 							
 							<td>
-							<a class="btn btn-warning" href="/config/editregion/{{ $region -> id}}">
+							<a class="btn btn-warning" href="/config/region/editar/{{ $region -> id}}">
 								Editar
 							<span class="glyphicon glyphicon-pencil"></span>
 							</a>

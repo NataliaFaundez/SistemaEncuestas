@@ -6,21 +6,23 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Validator;
 
 use App\Region;
+use App\Comuna;
 
-class RegionController extends Controller
+
+class ComunaController extends Controller
 {
     //
     public function PostGuardar(Request $request){
     	$validator = Validator::make($request->all(), [            
-            'region'  =>'required',            
+            'comuna'  =>'required',
+            'region'  =>'required'            
         ]);
     
         if ($validator->fails())
         {
-            return view('configuracion.region', ["errors" => $validator->errors()->all()]);
+            return view('configuracion.comuna', ["errors" => $validator->errors()->all()]);
         }
 
         $inputs = $request->all();
@@ -28,22 +30,23 @@ class RegionController extends Controller
         //$inputs["validador_id"] = $user->id;
 
         Region::create($inputs);
-        return redirect('config/region');
+        return redirect('config/comuna');
     }
 
     public function Index(){
-        $regiones = Region::all();
-        return view('configuracion.region', ["regiones" => $regiones]);
+        $comunas = Comuna::all();
+
+        return view('configuracion.comuna', ["comunas" => $comunas, "regiones"=> Region::all()]);
     }
 
     public function Editar($id){
-        $region = Region::findOrFail($id);
-        return view('configuracion.editarRegion', ['region'=> $region]);
+        $comuna = Comuna::findOrFail($id);
+        return view('configuracion.editarComuna', ['comuna'=> $comuna]);
     }
     public function EditarSave(Request $request, $id){
-        $region = Region::findOrFail($id);
-        $region->region = $request->region;
-        $region->save();
+        $comuna = Comuna::findOrFail($id);
+        $comuna->comuna = $request->comuna;
+        $comuna->save();
         return redirect('config/region');
     }
     /*public function Mostrar($id){
@@ -52,8 +55,8 @@ class RegionController extends Controller
     }*/
 
     public function Eliminar($id){       
-        $region = Region::findOrFail($id);
-        $region->delete();
+        $comuna = Comuna::findOrFail($id);
+        $comuna->delete();
         return redirect('config/region');
     }
 }

@@ -5,7 +5,7 @@
 	<!-- center left-->
 	<div class="col-md-5">
 		<!--tabs-->
-		<form class="form-horizontal" action="/config/region/editar/{id}" method="POST">
+		<form class="form-horizontal" action="/config/region/editar/{{$region->id}}" method="POST">
 		<div class="panel">
 			<div class="panel panel-default">
 				<div class="panel-heading">
@@ -19,7 +19,7 @@
 						<div class="control-group">
 							<label>Agregar Region</label>						
 							<div class="controls">
-								<input type="text" class="form-control" name="region" value="{{$region}}">
+								<input type="text" class="form-control" name="region" value="{{$region->region}}">
 							</div>	
 						</div>	
 
@@ -28,7 +28,7 @@
 						<div class="control-group">						
 							<div class="controls">
 								<button type="submit" class="btn btn-primary">
-								Ingresar
+								Guardar
 								</button>
 							</div>
 						</div>
