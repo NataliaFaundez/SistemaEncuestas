@@ -104,6 +104,8 @@ Route::get("/config/editcomuna", function () {
     return view('/configuracion/editarComuna');
 });
 
+Route::get("/proyecto/eliminar/{id}", 'EncuestaController@Eliminar');
+
 
 
 

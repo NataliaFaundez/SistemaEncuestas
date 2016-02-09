@@ -70,7 +70,7 @@
 							Editar
 							<span class="glyphicon glyphicon-pencil"></span>
 							</a>
-							<a class="btn btn-danger" href="#">
+							<a class="btn btn-danger" href="/proyecto/eliminar/{{ $proyecto->id }}">
 							Eliminar 
 							<span class="glyphicon glyphicon-remove"></span>
 							</a>	 			
