@@ -10,14 +10,14 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<div class="panel-title">
-					<h4>Editar Region</h4>
+					<h4>Editar Encuesta</h4>
 					</div>
 				</div>
 				<div class="panel-body">
 					<form class="form form-vertical">
 						
 						<div class="control-group">
-						<label>Agregar Region</label>						
+						<label>Agregar Pregunta</label>						
 							<div class="controls">
 								<input type="text" class="form-control" placeholder="Enter Name">
 						</div>	
@@ -52,15 +52,15 @@
 					<table class="table table-striped">
 						<thead>
 							<tr>
-							<th>Región</th>
-							<th>Comuna</th>
+							<th>Pregunta</th>
+							
 							<th>Acciones</th>
 							</tr>
 						</thead>
 						<tbody>
 						<tr>
-							<td>Metropolitana</td>
-							<td>Stgo centro</td>
+							<td>Ingreso</td>
+							
 							<td>
 							<a class="btn btn-warning" href="#">
 								Editar

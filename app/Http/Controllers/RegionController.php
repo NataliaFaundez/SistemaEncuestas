@@ -15,7 +15,7 @@ class RegionController extends Controller
     //
     public function PostGuardar(Request $request){
     	$validator = Validator::make($request->all(), [            
-            'region'  =>'required',            
+            'region'  =>'required|alpha',            
         ]);
     
         if ($validator->fails())
@@ -41,6 +41,9 @@ class RegionController extends Controller
         return view('configuracion.editarRegion', ['region'=> $region]);
     }
     public function EditarSave(Request $request, $id){
+        $validator = Validator::make($request->all(), [            
+            'region'  =>'required|alpha',            
+        ]);
         $region = Region::findOrFail($id);
         $region->region = $request->region;
         $region->save();

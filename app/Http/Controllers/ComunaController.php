@@ -20,8 +20,8 @@ class ComunaController extends Controller
         $inputs = $request->all();
 
         $validator = Validator::make($inputs, [            
-            'comuna'    =>'required',
-            'region_id' =>'required'            
+            'comuna'    =>'required|alpha',
+            'region_id' =>'required|exists:regiones,id'            
         ]);
 
         if ($validator->fails())
@@ -53,9 +53,11 @@ class ComunaController extends Controller
     }
 
     public function EditarSave(Request $request, $id){
-        $comuna = Comuna::findOrFail($id);
-
-    
+        $validator = Validator::make($inputs, [            
+            'comuna'    =>'required|alpha',
+            'region_id' =>'required|exists:regiones,id'            
+        ]);
+        $comuna = Comuna::findOrFail($id);    
         $regiones = Region::all();
         
         $comuna->comuna    = $request->comuna;
