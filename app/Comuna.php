@@ -7,11 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 class Comuna extends Model
 {
     //
-       protected $table = "comunas";
+    protected $table = "comunas";
 
     protected $fillable = [
         'comuna',
-        'region'
+        'region_id'
       
     ];
+
+    public function region()
+    {
+    	return $this->belongsTo(Region::class);
+    }
 }
