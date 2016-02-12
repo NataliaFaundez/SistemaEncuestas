@@ -50,8 +50,43 @@
                     <li><a href="{{ url('/home') }}">Home</a></li>
                 </ul>
 
+
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
+
+
+                    <?php  
+                        $user = Auth::user();
+                        if ($user) {
+                    ?>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+                        <i class="glyphicon glyphicon-user"></i>
+                         Roles 
+                        <span class="caret"></span>
+                        </a>
+                        <ul id="g-account-menu" class="dropdown-menu" role="menu">
+                            <?php 
+                               if ($user->controlador) {
+                                   echo '<li><a href="/controlador">Controlador</a></li>';
+                               }
+                               if ($user->administrador_sistema) {
+                                   echo '<li><a href="/sistema/clientes">Sistema</a></li>';
+                               }
+                               if ($user->encuestador) {
+                                   echo '<li><a href="/encuestador">Encuesador</a></li>';
+                               }
+                               if ($user->admin) {
+                                   echo '<li><a href="/cliente/administrador">Administrador</a></li>';
+                               }
+                            ?>
+                        </ul>
+                       
+                    </li>
+                    <?php 
+                        }
+                    ?>                               
+
                     <!-- Authentication Links -->
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>

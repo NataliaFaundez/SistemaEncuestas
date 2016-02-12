@@ -33,6 +33,31 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
                             <i class="glyphicon glyphicon-user"></i>
+                             Roles 
+                             <span class="caret"></span>
+                             </a>
+                            <ul id="g-account-menu" class="dropdown-menu" role="menu">
+                              <?php  
+                               $user = Auth::user();
+                               if ($user->controlador) {
+                                   echo '<li><a href="/controlador">Controlador</a></li>';
+                               }
+                               if ($user->administrador_sistema) {
+                                   echo '<li><a href="/sistema/clientes">Sistema</a></li>';
+                               }
+                               if ($user->encuestador) {
+                                   echo '<li><a href="/encuestador">Encuesador</a></li>';
+                               }
+                               if ($user->admin) {
+                                   echo '<li><a href="/cliente/administrador">Administrador</a></li>';
+                               }
+                              ?>                               
+                            </ul>
+                           
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+                            <i class="glyphicon glyphicon-user"></i>
                              Admin 
                              <span class="caret"></span>
                              </a>
@@ -115,6 +140,12 @@
                     </div>                             
         </div>
     </div>
+
+    
+    <!-- script references -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="/asset/js/bootstrap.min.js"></script>
+    <script src="/asset/js/scripts.js"></script>
 </div>
 
 
