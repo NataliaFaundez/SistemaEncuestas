@@ -28,10 +28,6 @@ Route::get("/cliente/administrador", function () {
     return view('/cliente/layout');
 });
 
-Route::get("/cliente/proyecto", function () {
-    return view('/cliente/proyecto');
-});
-
 Route::get("/cliente/usuarios", function () {
     return view('/cliente/usuarios');
 });
@@ -89,14 +85,6 @@ Route::get("/configuracion", function () {
 });
 
 
-Route::get("/config/editregion", function () {
-    return view('/configuracion/editarRegion');
-});
-
-Route::get("/config/editcomuna", function () {
-    return view('/configuracion/editarComuna');
-});
-
 Route::get("/proyecto/eliminar/{id}", 'ProyectoController@Eliminar');
 
 Route::get("/config/region", 'RegionController@Index');
@@ -113,6 +101,12 @@ Route::post("/config/comuna/save", 'ComunaController@PostGuardar');
 Route::get("/config/comuna/eliminar/{id}", 'ComunaController@Eliminar');
 Route::get("/config/comuna/editar/{id}", 'ComunaController@Editar');
 Route::post("/config/comuna/editar/{id}", 'ComunaController@EditarSave');
+
+Route::get("/cliente/proyecto", 'ComunaController@Index');
+Route::post("/cliente/proyecto/save", 'ComunaController@PostGuardar');
+Route::get("/cliente/proyecto/eliminar/{id}", 'ComunaController@Eliminar');
+Route::get("/cliente/proyecto/editar/{id}", 'ComunaController@Editar');
+Route::post("/cliente/proyecto/editar/{id}", 'ComunaController@EditarSave');
 
 /*
 |--------------------------------------------------------------------------
