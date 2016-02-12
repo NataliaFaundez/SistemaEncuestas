@@ -6,6 +6,7 @@
 	<!-- center left-->
 	<div class="col-md-6">
 		<!--tabs-->
+		<form class="form-horizontal" action="/cliente/proyecto/save" method="POST">
 		<div class="panel">
 					<div class="panel panel-default">
 				<div class="panel-heading">
@@ -19,7 +20,7 @@
 						<div class="control-group">
 							<label>Proyecto</label>
 							<div class="controls">
-								<input type="text" class="form-control" placeholder="Enter Name">
+								<input type="text" class="form-control" name="proyecto" placeholder="Enter Name">
 							</div>
 						</div>						
 						<!--<div class="control-group">
@@ -65,19 +66,22 @@
 							</tr>
 						</thead>
 						<tbody>
-						<tr>
-							<td>Aphix</td>
+						@foreach ($proyectos as $proyecto)
+						<tr>							
+	                        <td> {{ $proyecto -> proyecto }} </td>            
+							
 							<td>
-							<a class="btn btn-warning" href="#">
-							Editar
+							<a class="btn btn-warning" href="/cliente/proyecto/editar/{{ $proyecto -> id}}">
+								Editar
 							<span class="glyphicon glyphicon-pencil"></span>
 							</a>
-							<a class="btn btn-danger" href="/proyecto/eliminar/">
-							Eliminar 
+							<a class="btn btn-danger" href="/cliente/proyecto/eliminar/{{ $proyecto -> id}}">
+								Eliminar 
 							<span class="glyphicon glyphicon-remove"></span>
 							</a>	 			
 							</td>										                               
 						</tr>
+		                @endforeach
 						</tbody>
 					</table>
 				</div>

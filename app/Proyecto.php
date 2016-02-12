@@ -13,6 +13,7 @@ class Proyecto extends Model
         'proyecto'
       
     ];
+ 	
 
-    p
+   
 }

@@ -102,11 +102,11 @@ Route::get("/config/comuna/eliminar/{id}", 'ComunaController@Eliminar');
 Route::get("/config/comuna/editar/{id}", 'ComunaController@Editar');
 Route::post("/config/comuna/editar/{id}", 'ComunaController@EditarSave');
 
-Route::get("/cliente/proyecto", 'ComunaController@Index');
-Route::post("/cliente/proyecto/save", 'ComunaController@PostGuardar');
-Route::get("/cliente/proyecto/eliminar/{id}", 'ComunaController@Eliminar');
-Route::get("/cliente/proyecto/editar/{id}", 'ComunaController@Editar');
-Route::post("/cliente/proyecto/editar/{id}", 'ComunaController@EditarSave');
+Route::get("/cliente/proyecto", 'ProyectoController@Index');
+Route::post("/cliente/proyecto/save", 'ProyectoController@PostGuardar');
+Route::get("/cliente/proyecto/eliminar/{id}", 'ProyectoController@Eliminar');
+Route::get("/cliente/proyecto/editar/{id}", 'ProyectoController@Editar');
+Route::post("/cliente/proyecto/editar/{id}", 'ProyectoController@EditarSave');
 
 /*
 |--------------------------------------------------------------------------
@@ -119,6 +119,22 @@ Route::post("/cliente/proyecto/editar/{id}", 'ComunaController@EditarSave');
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('/home', 'HomeController@index');
+
+
+});
+
+Route::group(['middleware' => ['web', 'auth']], function () {
+
+    Route::get("test", function() {
+        $user = Auth::user();
+        if ($user->controlador) {
+            return 'soy controlador';
+        } 
+        return 'no soy controlador';
+    });
+
 });
