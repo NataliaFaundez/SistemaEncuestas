@@ -84,9 +84,9 @@
                         <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Opciones <span class="glyphicon glyphicon-list"></span></a>
                             <ul class="nav nav-stacked collapse in" id="userMenu">
                                 <li class="active"> <a href="/controlador/ver"><i class="glyphicon glyphicon-home"></i> 
-                                    Ver encuesta</a></li>
+                                    Ver control</a></li>
                                 <li><a href="/controlador/ingresar"><i class="glyphicon glyphicon-envelope"></i> 
-                                    Ingresar encuesta</a></li>                                
+                                    Ingresar control</a></li>                                
                             </ul>
                         </li>  
                     </ul>

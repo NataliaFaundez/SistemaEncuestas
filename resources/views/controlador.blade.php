@@ -6,15 +6,27 @@
         <title>Bootstrap 3 Admin</title>
         <meta name="generator" content="Bootply" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <!--
         <link href="/asset/css/bootstrap.min.css" rel="stylesheet">
 
         <link href="/asset/bootstrap-switch.css" rel="stylesheet">
         <script src="/asset/jquery.min.js"></script>
         <script src="/asset/bootstrap-switch.js"></script>
+        -->
+
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
         <!--[if lt IE 9]>
             <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <link href="/asset/css/styles.css" rel="stylesheet">
+        
+        <!--<link href="/asset/css/styles.css" rel="stylesheet">-->
     </head>
     <body>
         <!-- header -->
@@ -55,7 +67,7 @@
                             </ul>
                            
                         </li>
-                        <li><a href="/logout"><i class="glyphicon glyphicon-lock"></i> Logout</a></li>
+                        <li><a href="/logout"><i class="glyphicon glyphicon-home"></i> Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -103,10 +115,10 @@
                 <ul class="nav nav-stacked">
                     <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Opciones <span class="glyphicon glyphicon-list"></span></a>
                         <ul class="nav nav-stacked collapse in" id="userMenu">
-                            <li class="active"> <a href="/controlador/ver"><i class="glyphicon glyphicon-home"></i> 
-                                Ver encuesta</a></li>
-                            <li><a href="/controlador/ingresar"><i class="glyphicon glyphicon-envelope"></i> 
-                                Ingresar encuesta</a></li>                                
+                            <li class="active"> <a href="/controlador/ver"><i class="glyphicon glyphicon-list-alt"></i> 
+                                Ver control</a></li>
+                            <li><a href="/controlador/ingresar"><i class="glyphicon glyphicon-pencil"></i> 
+                                Ingresar control</a></li>                                
                         </ul>
                     </li>  
                 </ul>
