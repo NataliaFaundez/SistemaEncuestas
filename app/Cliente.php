@@ -14,5 +14,10 @@ class Cliente extends Model
         'nombre',
         'rut'
     ];
+    public function proyectos()
+    {
+    	return $this->hasMany(Proyecto::class);
+
+    }
 
 }

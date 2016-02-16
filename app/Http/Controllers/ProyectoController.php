@@ -16,7 +16,8 @@ class ProyectoController extends Controller
 
      public function PostGuardar(Request $request){
         $validator = Validator::make($request->all(), [            
-            'proyecto'  =>'required|alpha',         
+            'proyecto'  =>'required|alpha',             
+            'cliente_id' =>'required|exists:clientes,id'         
         ]);
     
         if ($validator->fails())
@@ -34,13 +35,14 @@ class ProyectoController extends Controller
     }
 
     public function Index(){
-        $proyectos = Proyecto::all();
-        return view('cliente.proyecto', ["proyectos" => $proyectos]);
+        $proyectos = Proyecto::with("cliente")->get();
+        return view('cliente.proyecto', ["proyectos" => $proyectos, "clientes"=> Cliente::all()]);
     }
 
     public function Editar($id){
         $proyecto = Proyecto::findOrFail($id);
-        return view('cliente.proyecto_editar', ['proyecto'=> $proyecto]);
+        $clientes = Cliente::all();
+        return view('cliente.proyecto_editar', compact("proyecto", "clientes"));
     }
     public function EditarSave(Request $request, $id){
         $validator = Validator::make($request->all(), [            
@@ -53,7 +55,9 @@ class ProyectoController extends Controller
             return view('cliente.proyecto', ["proyectos" => $proyectos,"errors" => $validator->errors()->all()]);
         }
         $proyecto = Proyecto::findOrFail($id);
+        $clientes = Cliente::all();
         $proyecto->proyecto = $request->proyecto;
+        $proyecto->cliente_id = $request->cliente_id;              
         $proyecto->save();
         return redirect('cliente/proyecto');
     }

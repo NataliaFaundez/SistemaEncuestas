@@ -12,7 +12,7 @@ class Proyecto extends Model
     protected $fillable = [
 
         'proyecto',
-        'clientes_id'
+        'cliente_id'
     ];
 
    
