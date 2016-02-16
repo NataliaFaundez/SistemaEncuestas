@@ -7,6 +7,7 @@
 	<div class="col-md-6">
 		<!--tabs-->
 		<form class="form-horizontal" action="/cliente/proyecto/save" method="POST">
+		{{ csrf_field() }}     
 		<div class="panel">
 					<div class="panel panel-default">
 				<div class="panel-heading">
@@ -22,15 +23,17 @@
 							<div class="controls">
 								<input type="text" class="form-control" name="proyecto" placeholder="Enter Name">
 							</div>
-						</div>						
-						<!--<div class="control-group">
-						<label>Category</label>
-						<div class="controls">
-						<select class="form-control">
-						<option>options</option>
-						</select>
 						</div>
-						</div>-->
+						<div class="control-group">
+						 <label for="" >Clientes</label>                 
+                            <select class="form-control" name='cliente_id' class="col-sm-5">
+                                @foreach ($clientes as $cliente)
+                                  <option value="{{ $cliente->id }}">{{ $cliente->nombre }}</option>
+                               
+		               			 @endforeach
+                            </select>
+						</div>						
+						
 						<BR>
 							<div class="control-group">						
 								<div class="controls">

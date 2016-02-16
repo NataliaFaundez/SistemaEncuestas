@@ -7,6 +7,7 @@
 	<div class="col-md-5">
 	<form class="form-horizontal" action="/config/comuna/save" method="POST">
 		<!--tabs-->
+		{{ csrf_field() }}     
 		<div class="panel">
 			<div class="panel panel-default">
 				<div class="panel-heading">

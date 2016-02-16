@@ -7,6 +7,8 @@
 	<!-- center left-->
 	<div class="col-md-6">
 		<!--tabs-->
+		<form class="form-horizontal" action="/sistema/clientes/save" method="POST">
+		{{ csrf_field() }}     
 		<div class="panel">
 			<div class="panel panel-default">
 				<div class="panel-heading">
@@ -20,23 +22,16 @@
 						<div class="control-group">
 							<label>Nombre o Razon Social</label>
 							<div class="controls">
-								<input type="text" class="form-control" placeholder="Enter Name">
+								<input type="text" class="form-control" name='nombre' placeholder="Enter Name">
 							</div>
 						</div>
 						<div class="control-group">
 							<label>Rut</label>
 							<div class="controls">
-								<input type="text" class="form-control" placeholder="Enter Name">
+								<input type="text" class="form-control" name='rut' placeholder="Enter Name">
 							</div>
 						</div>
-						<!--<div class="control-group">
-						<label>Category</label>
-						<div class="controls">
-						<select class="form-control">
-						<option>options</option>
-						</select>
-						</div>
-						</div>-->
+						
 						<BR>
 							<div class="control-group">						
 								<div class="controls">
@@ -49,7 +44,24 @@
 				</div>
 			<!--/panel content-->
 			</div>                       
-		</div>                   
+		</div>   
+		@if ( isset($errors) )
+		@if (count($errors) > 0)
+
+		<div class="row">
+			<div class="col-md-offset-3 col-md-6">
+			    <div class="alert alert-info">
+			        <ul>
+			            @foreach ($errors as $error)
+			                <li>{{ $error }}</li>
+			            @endforeach
+			        </ul>
+			    </div>
+		
+		    </div>
+		</div>
+		@endif
+	@endif                
 	</div>
 			<!--/col-->
 		<div class="col-md-6">  
@@ -71,20 +83,25 @@
 							</tr>
 						</thead>
 						<tbody>
-						<tr>
-							<td>Aphix</td>
-							<td>11.111.111-1</td>
+						@foreach ($clientes as $cliente)
+						<tr>							
+	                      
+	                        <td> {{ $cliente-> nombre }} </td>  
+
+	                        <td> {{ $cliente -> rut }} </td>  
+							
 							<td>
-							<a class="btn btn-warning" href="#">
+							<a class="btn btn-warning" href="/sistema/clientes/editar/{{ $cliente -> id}}">
 							Editar
 							<span class="glyphicon glyphicon-pencil"></span>
 							</a>
-							<a class="btn btn-danger" href="#">
+							<a class="btn btn-danger" href="/sistema/clientes/eliminar/{{ $cliente -> id}}">
 							Eliminar 
 							<span class="glyphicon glyphicon-remove"></span>
 							</a>	 			
 							</td>										                               
 						</tr>
+						@endforeach
 						</tbody>
 					</table>
 				</div>

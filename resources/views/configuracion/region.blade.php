@@ -6,6 +6,7 @@
 	<div class="col-md-5">
 		<!--tabs-->
 		<form class="form-horizontal" action="/config/region/save" method="POST">
+		<?php echo csrf_field(); ?>
 		<div class="panel">
 			<div class="panel panel-default">
 				<div class="panel-heading">

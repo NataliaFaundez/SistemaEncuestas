@@ -10,9 +10,14 @@ class Proyecto extends Model
     protected $table = "proyectos";
 
     protected $fillable = [
-        'proyecto'
+
+        'proyecto',
+        'clientes_id'
     ];
- 	
 
    
+   public function cliente()
+    {
+    	return $this->belongsTo(Cliente::class);
+    }
 }

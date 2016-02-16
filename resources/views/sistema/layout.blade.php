@@ -78,8 +78,12 @@
 		            <ul class="nav nav-stacked">
 		                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Administrar <i class="glyphicon glyphicon-list"></i></a>
 		                    <ul class="nav nav-stacked collapse in" id="userMenu">
-		                        <li class="active"> <a href="/sistema/clientes"><i class="glyphicon glyphicon-lock"></i> Clientes</a></li>
-		                        <li><a href="/sistema/usuarios"><i class="glyphicon glyphicon-user"></i> Usuarios </span></a></li>
+		                        <li class="active"> <a href="/sistema/clientes"><i class="glyphicon glyphicon-lock"></i> 
+		                        Clientes
+		                        </a></li>
+		                        <li><a href="/sistema/usuarios"><i class="glyphicon glyphicon-user"></i> 
+		                        Usuarios 
+		                        </a></li>
 		                    
 		                    </ul>
 		                </li>  

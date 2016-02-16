@@ -1,26 +1,33 @@
-@extends('cliente.layout_configuracion')
+@extends('sistema.layout')
 @section('content')
 
 <div class="row">
 	<!-- center left-->
 	<div class="col-md-5">
 		<!--tabs-->
-		<form class="form-horizontal" action="/config/region/editar/{{$region->id}}" method="POST">
-		<?php echo csrf_field(); ?>
+		<form class="form-horizontal" action="/sistema/clientes/editar/{{$cliente->id}}" method="POST">
+		{{ csrf_field() }}     
 		<div class="panel">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<div class="panel-title">
-					<h4>Editar Region</h4>
+					<h4>Editar Cliente</h4>
 					</div>
 				</div>
 				<div class="panel-body">
 					<form class="form form-vertical">
 						
 						<div class="control-group">
-							<label>Editar Region</label>						
+							<label>Editar Nombre</label>						
 							<div class="controls">
-								<input type="text" class="form-control" name="region" value="{{$region->region}}">
+								<input type="text" class="form-control" name="nombre" value="{{$cliente->nombre}}">
+							</div>	
+						</div>	
+
+						<div class="control-group">
+							<label>Editar Rut</label>						
+							<div class="controls">
+								<input type="text" class="form-control" name="rut" value="{{$cliente->rut}}">
 							</div>	
 						</div>	
 

@@ -88,8 +88,8 @@
 						</thead>
 						<tbody>
 						<tr>
-							<td>Aphix</td>
-							<td>Práctica</td>
+							<td>##</td>
+							<td> ##</td>
 							<td>
 							<a class="btn btn-success" href="#">
 								Mostrar

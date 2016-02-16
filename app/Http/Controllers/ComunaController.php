@@ -26,7 +26,8 @@ class ComunaController extends Controller
 
         if ($validator->fails())
         {
-            return view('configuracion.comuna', ["errors" => $validator->errors()->all()]);
+            $comunas = Comuna::all();
+            return view('configuracion.comuna', ["comunas" => $comunas,"errors" => $validator->errors()->all()]);
         }
 
         //$user = Auth::user();
@@ -57,6 +58,11 @@ class ComunaController extends Controller
             'comuna'    =>'required|alpha',
             'region_id' =>'required|exists:regiones,id'            
         ]);
+         if ($validator->fails())
+        {
+            $comunas = Comuna::all();
+            return view('configuracion.comuna', ["comunas" => $comunas,"errors" => $validator->errors()->all()]);
+        }
         $comuna = Comuna::findOrFail($id);    
         $regiones = Region::all();
         

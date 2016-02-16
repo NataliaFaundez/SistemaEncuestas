@@ -33,9 +33,6 @@ Route::group(['middleware' => ['web', 'auth']], function () {
 
     Route::get('/home', 'HomeController@index');
 
-    Route::get("/sistema/clientes", function () {
-        return view('/sistema/clientes');
-    });
 
     Route::get("/sistema/usuarios", function () {
         return view('/sistema/usuarios');
@@ -46,9 +43,6 @@ Route::group(['middleware' => ['web', 'auth']], function () {
         return view('/cliente/layout');
     });
 
-    Route::get("/cliente/usuarios", function () {
-        return view('/cliente/usuarios');
-    });
 
     Route::get("/cliente/zonaEncuestador", function () {
         return view('/cliente/zonaEncuestador');
@@ -85,6 +79,9 @@ Route::group(['middleware' => ['web', 'auth']], function () {
     Route::get("/controlador", function () {
         return view('controlador');
     });
+    Route::get("/cliente/usuarios", function () {
+        return view('/cliente/usuarios');
+    });
 
     Route::get("/controlador/ver", function () {
         return view('controlador1');
@@ -103,8 +100,7 @@ Route::group(['middleware' => ['web', 'auth']], function () {
     });
 
 
-    Route::get("/proyecto/eliminar/{id}", 'ProyectoController@Eliminar');
-
+// configuracion de la region
     Route::get("/config/region", 'RegionController@Index');
     Route::post("/config/region/save", 'RegionController@PostGuardar');
     Route::get("/config/region/eliminar/{id}", 'RegionController@Eliminar');
@@ -114,17 +110,28 @@ Route::group(['middleware' => ['web', 'auth']], function () {
     //Route::get("/config/comuna", function () {
       //return view('/configuracion/comuna', ["regiones"=> App\Region::all()]);
     //});
+    //configuracion de la comuna
     Route::get("/config/comuna", 'ComunaController@Index');
     Route::post("/config/comuna/save", 'ComunaController@PostGuardar');
     Route::get("/config/comuna/eliminar/{id}", 'ComunaController@Eliminar');
     Route::get("/config/comuna/editar/{id}", 'ComunaController@Editar');
     Route::post("/config/comuna/editar/{id}", 'ComunaController@EditarSave');
 
+//configuracion de proyecto
     Route::get("/cliente/proyecto", 'ProyectoController@Index');
     Route::post("/cliente/proyecto/save", 'ProyectoController@PostGuardar');
     Route::get("/cliente/proyecto/eliminar/{id}", 'ProyectoController@Eliminar');
     Route::get("/cliente/proyecto/editar/{id}", 'ProyectoController@Editar');
     Route::post("/cliente/proyecto/editar/{id}", 'ProyectoController@EditarSave');
+
+//configuracion de clientes
+    
+    Route::get("/sistema/clientes", 'ClienteController@Index');
+    Route::post("/sistema/clientes/save", 'ClienteController@PostGuardar');
+    Route::get("//sistema/clientes/eliminar/{id}", 'ClienteController@Eliminar');
+    Route::get("/sistema/clientes/editar/{id}", 'ClienteController@Editar');
+    Route::post("/sistema/clientes/editar/{id}", 'ClienteController@EditarSave');
+
 
 });
 /*
