@@ -82,26 +82,9 @@
 
 
         
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-3">
-                    <!-- Left column -->
-                    <a href="#"><strong><i class="glyphicon glyphicon-wrench"></i> Tools</strong></a>
-
-                    <hr>
-
-                    <ul class="nav nav-stacked">
-                        <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Opciones <span class="glyphicon glyphicon-list"></span></a>
-                            <ul class="nav nav-stacked collapse in" id="userMenu">
-                                <li class="active"> <a href="/encuestador1"><i class="glyphicon glyphicon-home"></i> 
-                                    Ver encuesta</a></li>
-                                <li><a href="/encuestador2"><i class="glyphicon glyphicon-pencil"></i> 
-                                    Ingresar encuesta</a></li>                                
-                            </ul>
-                        </li>  
-                    </ul>
-                </div>
-          
+<div class="container-fluid">
+    <div class="row">
+    @include('menus.menu_encuestador')
 
         <div class="col-sm-6">
             <div class="input-group">
@@ -123,24 +106,29 @@
                                 </thead>
 
                                 <tbody>
-                                <tr>
-                                    <td>Aphix</td>
-                                    <td>Práctica</td>
+                                 @foreach ($encuestas as $encuesta)
+                                <tr>                            
+                                  
+                                    <td> {{ $encuesta->proyecto->proyecto }} </td>  
+
+                                    <td> {{ $encuesta -> folio_a."-".$encuesta->folio_b }} </td>  
+                                    
                                     <td>
-                                    <a class="btn btn-success" href="#">
+                                    <a class="btn btn-success" href="/encuestador/mostrar/{{$encuesta->id}}">
                                         Mostrar
                                     <span class="glyphicon glyphicon-eye-open"></span>
                                     </a>
-                                    <a class="btn btn-warning" href="#">
+                                    <a class="btn btn-warning" href="/encuestador/editar/{{$encuesta->id}}">
                                         Editar
                                     <span class="glyphicon glyphicon-pencil"></span>
                                     </a>
-                                    <a class="btn btn-danger" href="#">
+                                    <a class="btn btn-danger" href="/encuestador/eliminar/{{$encuesta->id}}">
                                         Eliminar 
                                     <span class="glyphicon glyphicon-remove"></span>
                                     </a>                
                                     </td>                                                                      
                                 </tr>
+                                @endforeach
                                 </tbody>
                             </table>
                         </div>

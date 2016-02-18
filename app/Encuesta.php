@@ -10,7 +10,7 @@ class Encuesta extends Model
     protected $table = "encuestas";
 
     protected $fillable = [
-        'estado',
+        'proyecto_id', 
         'folio_a', 
         'folio_b', 
         'rut',  
@@ -18,13 +18,11 @@ class Encuesta extends Model
         'numero', 
         'block', 
         'departamento', 
+        'comuna_id',
         'telefono', 
         'celular', 
         'contacto1', 
         'contacto2',
-        'region_id'
-        'comuna_id',
-        'proyecto_id', 
         
     ];
 

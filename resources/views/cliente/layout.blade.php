@@ -81,7 +81,7 @@
 		                        	Zona de encuestador</a></li>		
 		                        <li><a href="/cliente/controlador"><i class="glyphicon glyphicon-phone-alt"></i> 
 		                        	Controlador </a></li>	   
-		                        <li><a href="/cliente/encuestas"><i class="glyphicon glyphicon-question-sign"></i> 
+		                        <li><a href="/cliente/estado/encuestas"><i class="glyphicon glyphicon-question-sign"></i> 
 		                        	Estado encuestas</a></li>
 		                        <li><a href="/cliente/add"><i class="glyphicon glyphicon-copy"></i> 
 		                        	Encuesta</a></li>	 		                       

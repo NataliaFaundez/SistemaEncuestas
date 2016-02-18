@@ -93,9 +93,9 @@
                     <ul class="nav nav-stacked">
                         <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">Opciones <span class="glyphicon glyphicon-list"></span></a>
                             <ul class="nav nav-stacked collapse in" id="userMenu">
-                                <li class="active"> <a href="/encuestador1"><i class="glyphicon glyphicon-home"></i> 
+                                <li class="active"> <a href="/encuestador1"><i class="glyphicon glyphicon-list-alt"></i> 
                                     Ver encuesta</a></li>
-                                <li><a href="/encuestador2"><i class="glyphicon glyphicon-envelope"></i> 
+                                <li><a href="/encuestador2"><i class="glyphicon glyphicon-pencil"></i> 
                                     Ingresar encuesta</a></li>                                
                             </ul>
                         </li>  
