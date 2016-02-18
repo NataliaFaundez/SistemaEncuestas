@@ -54,14 +54,7 @@
 							</select>
 						</div>
 						</div>
-						<div class="control-group">
-						<label>Rango</label>
-						<div class="controls">
-							<select class="form-control">
-								<option>00.000.000-0  a 01.111.111-1</option>
-								<option>otros</option>
-							</select>
-						</div>
+						
 						</div>
 						<BR>
 						<div class="control-group">						

@@ -25,13 +25,36 @@
 							</div>
 						</div>
 						<div class="control-group">
-						<label>Rango</label>
-							<div class="controls">
-								<select class="form-control">
-									<option>00.000.000-0  a 01.111.111-1</option>
-									<option>otros</option>
-								</select>
-							</div>
+						<label>Région</label>
+						<div class="controls">
+							<select class="form-control">
+								<option value='1'>I.Tarapacá</option>
+	                            <option value='2'>II.Antofagasta</option>
+	                            <option value='3'>III.Atacama</option>
+	                            <option value='4'>IV.Coquimbo</option>
+	                            <option value='5'>V.Valparaiso</option>
+	                            <option value='13' selected="selected">RM.Metropolitana de Santiago</option>
+	                            <option value='6'>VI.O'Higgins</option>
+	                            <option value='7'>VII.Maule</option>
+	                            <option value='8'>VIII.Bío-Bío</option>
+	                            <option value='9'>IX.La Araucanía</option>
+	                            <option value='10'>X.Los Lagos</option>
+	                            <option value='11'>XI.Aysén</option>
+	                            <option value='12'>XII.Magallanes</option>
+	                            <option value='14'>VIV.Los Ríos</option>
+	                            <option value='15'>XV.Arica y Parinacota</option>
+							</select>
+						</div>
+						</div>
+
+						<div class="control-group">
+						<label>Comuna</label>
+						<div class="controls">
+							<select class="form-control">
+								<option>Santiago centro</option>
+								<option>Sprinfield</option>
+							</select>
+						</div>
 						</div>
 						<BR>
 							<div class="control-group">						
@@ -63,14 +86,17 @@
 						<thead>
 							<tr>
 							<th>Nombre</th>
-							<th>Rango</th>
+							<th>Region</th>
+							<th>Comuna</th>
+
 							<th>Acciones</th>
 							</tr>
 						</thead>
 						<tbody>
 						<tr>
 							<td>Pepito</td>
-							<td>00.000.000-0  a 01.111.111-1</td>
+							<td>Metrop</td>
+							<td>San Joa</td>
 							<td>
 							<a class="btn btn-warning" href="#">
 								Editar

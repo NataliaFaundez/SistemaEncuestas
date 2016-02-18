@@ -6,15 +6,26 @@
 		<title>Bootstrap 3 Admin</title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<!--
 		<link href="/asset/css/bootstrap.min.css" rel="stylesheet">
 
 		<link href="/asset/bootstrap-switch.css" rel="stylesheet">
 		<script src="/asset/jquery.min.js"></script>
 		<script src="/asset/bootstrap-switch.js"></script>
+		-->
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link href="/asset/css/styles.css" rel="stylesheet">
+		<!--<link href="/asset/css/styles.css" rel="stylesheet"> -->
+
+		        <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
 	</head>
 	<body>
 		<!-- header -->
@@ -116,15 +127,15 @@
 		                    <ul class="nav nav-stacked collapse in" id="userMenu">
 		                        <li class="active"> <a href="/cliente/proyecto"><i class="glyphicon glyphicon-home"></i> 
 		                        	Proyectos</a></li>
-		                        <li><a href="/cliente/usuarios"><i class="glyphicon glyphicon-envelope"></i> 
+		                        <li><a href="/cliente/usuarios"><i class="glyphicon glyphicon-user"></i> 
 		                        	Usuarios</a></li>
-		                        <li><a href="/cliente/zonaEncuestador"><i class="glyphicon glyphicon-envelope"></i> 
+		                        <li><a href="/cliente/zonaEncuestador"><i class="glyphicon glyphicon-pushpin"></i> 
 		                        	Zona de encuestador</a></li>		
-		                        <li><a href="/cliente/controlador"><i class="glyphicon glyphicon-envelope"></i> 
-		                        	Controlador</a></li>	   
-		                        <li><a href="/cliente/encuestas"><i class="glyphicon glyphicon-envelope"></i> 
+		                        <li><a href="/cliente/controlador"><i class="glyphicon glyphicon-phone-alt"></i> 
+		                        	Controlador </a></li>	   
+		                        <li><a href="/cliente/encuestas"><i class="glyphicon glyphicon-question-sign"></i> 
 		                        	Estado encuestas</a></li>
-		                        <li><a href="/cliente/add"><i class="glyphicon glyphicon-envelope"></i> 
+		                        <li><a href="/cliente/add"><i class="glyphicon glyphicon-copy"></i> 
 		                        	Encuesta</a></li>	 		                       
 		                    </ul>
 		                </li>  

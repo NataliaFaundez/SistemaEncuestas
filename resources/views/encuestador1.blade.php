@@ -6,15 +6,22 @@
         <title>Bootstrap 3 Admin</title>
         <meta name="generator" content="Bootply" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="/asset/css/bootstrap.min.css" rel="stylesheet">
+        <!--<link href="/asset/css/bootstrap.min.css" rel="stylesheet">
 
         <link href="/asset/bootstrap-switch.css" rel="stylesheet">
         <script src="/asset/jquery.min.js"></script>
-        <script src="/asset/bootstrap-switch.js"></script>
+        <script src="/asset/bootstrap-switch.js"></script>-->
         <!--[if lt IE 9]>
             <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <link href="/asset/css/styles.css" rel="stylesheet">
+        <!--<link href="/asset/css/styles.css" rel="stylesheet">-->
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
     </head>
     <body>
         <!-- header -->
@@ -88,7 +95,7 @@
                             <ul class="nav nav-stacked collapse in" id="userMenu">
                                 <li class="active"> <a href="/encuestador1"><i class="glyphicon glyphicon-home"></i> 
                                     Ver encuesta</a></li>
-                                <li><a href="/encuestador2"><i class="glyphicon glyphicon-envelope"></i> 
+                                <li><a href="/encuestador2"><i class="glyphicon glyphicon-pencil"></i> 
                                     Ingresar encuesta</a></li>                                
                             </ul>
                         </li>  
