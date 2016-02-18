@@ -53,7 +53,7 @@
                                    echo '<li><a href="/sistema/clientes">Sistema</a></li>';
                                }
                                if ($user->encuestador) {
-                                   echo '<li><a href="/encuestador">Encuesador</a></li>';
+                                   echo '<li><a href="/encuestador">Encuestador</a></li>';
                                }
                                if ($user->admin) {
                                    echo '<li><a href="/cliente/administrador">Administrador</a></li>';
@@ -106,6 +106,16 @@
                 <form class="form-horizontal" method="POST" action="/encuestas/addsave">
                     {{ csrf_field() }}
                 
+                    <div class="control-group">
+                           <label for="" >Proyecto</label>                 
+                           <select class="form-control" name='proyecto_id' class="col-sm-5">
+                                @foreach ($proyectos as $proyecto)
+                                  <option value="{{ $proyecto->id }}">{{ $proyecto->proyecto }}</option>
+                               
+                         @endforeach
+                            </select>
+                    </div>
+
                     <div class="form-group">
                         <label for="" class="col-sm-2 control-label">Folio</label>
                         <div class="col-sm-4">
@@ -123,28 +133,6 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Región</label>
-                        <div class="col-sm-5">                          
-                            <select class="form-control" name='region'class="col-sm-5">
-                                <option value='1'>I.Tarapacá</option>
-                                <option value='2'>II.Antofagasta</option>
-                                <option value='3'>III.Atacama</option>
-                                <option value='4'>IV.Coquimbo</option>
-                                <option value='5'>V.Valparaiso</option>
-                                <option value='13' selected="selected">RM.Metropolitana de Santiago</option>
-                                <option value='6'>VI.O'Higgins</option>
-                                <option value='7'>VII.Maule</option>
-                                <option value='8'>VIII.Bío-Bío</option>
-                                <option value='9'>IX.La Araucanía</option>
-                                <option value='10'>X.Los Lagos</option>
-                                <option value='11'>XI.Aysén</option>
-                                <option value='12'>XII.Magallanes</option>
-                                <option value='14'>VIV.Los Ríos</option>
-                                <option value='15'>XV.Arica y Parinacota</option>
-                            </select>
-                        </div>
-                    </div>
 
 
                     <div class="form-group">
@@ -175,6 +163,26 @@
                             <input type="text" name="departamento" class="form-control" placeholder=" ">
                         </div>
                      </div>
+
+                   <div class="control-group">
+                           <label for="" >Región</label>                 
+                           <select class="form-control" name='region_id' class="col-sm-5">
+                                @foreach ($regiones as $region)
+                                  <option value="{{ $region->id }}">{{ $region->region }}</option>
+                               
+                         @endforeach
+                            </select>
+                    </div>
+                    
+                    <div class="control-group">
+                           <label for="" >Comuna</label>                 
+                           <select class="form-control" name='comuna_id' class="col-sm-5">
+                                @foreach ($comunas as $comuna)
+                                  <option value="{{ $comuna->id }}">{{ $comuna->comuna }}</option>
+                               
+                         @endforeach
+                            </select>
+                    </div>
 
                      <div class="form-group">
                         <label for="" class="col-sm-2 control-label">Nº de telefono</label>

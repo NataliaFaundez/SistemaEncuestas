@@ -40,7 +40,7 @@ Route::group(['middleware' => ['web', 'auth']], function () {
 
 
     Route::get("/cliente/administrador", function () {
-        return view('/cliente/layout');
+        return view('/cliente/principal');
     });
 
 

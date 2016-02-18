@@ -1,9 +1,15 @@
 @extends('cliente.layout')
+
+
+@section('menu_superior')
+    @include('menus.menu_principal', ["rol" => "admin"])
+@endsection
+
 @section('content')
 
 <div class="row">
 	<!-- center left-->
-	<div class="col-md-6">
+	<div class="col-md-5">
 		<!--tabs-->
 		<div class="panel">
 			<div class="panel panel-default">
@@ -15,47 +21,45 @@
 				<div class="panel-body">
 					<form class="form form-vertical">
 						<div class="control-group">
-						<label>Encuestador</label>
-						<div class="controls">
-							<select class="form-control">
-								<option>Juanito</option>
-								<option>Pedrito</option>
-							</select>
-						</div>
-						</div>
-						<div class="control-group">
-						<label>Région</label>
-						<div class="controls">
-							<select class="form-control">
-								<option value='1'>I.Tarapacá</option>
-	                            <option value='2'>II.Antofagasta</option>
-	                            <option value='3'>III.Atacama</option>
-	                            <option value='4'>IV.Coquimbo</option>
-	                            <option value='5'>V.Valparaiso</option>
-	                            <option value='13' selected="selected">RM.Metropolitana de Santiago</option>
-	                            <option value='6'>VI.O'Higgins</option>
-	                            <option value='7'>VII.Maule</option>
-	                            <option value='8'>VIII.Bío-Bío</option>
-	                            <option value='9'>IX.La Araucanía</option>
-	                            <option value='10'>X.Los Lagos</option>
-	                            <option value='11'>XI.Aysén</option>
-	                            <option value='12'>XII.Magallanes</option>
-	                            <option value='14'>VIV.Los Ríos</option>
-	                            <option value='15'>XV.Arica y Parinacota</option>
-							</select>
-						</div>
+							<label>Encuestador</label>
+							<div class="controls">
+								<select class="form-control">
+									<option>Juanito</option>
+									<option>Pedrito</option>
+								</select>
+							</div>
 						</div>
 						<div class="control-group">
-						<label>Comuna</label>
-						<div class="controls">
-							<select class="form-control">
-								<option>Santiago centro</option>
-								<option>Sprinfield</option>
-							</select>
+							<label>Région</label>
+							<div class="controls">
+								<select class="form-control">
+									<option value='1'>I.Tarapacá</option>
+		                            <option value='2'>II.Antofagasta</option>
+		                            <option value='3'>III.Atacama</option>
+		                            <option value='4'>IV.Coquimbo</option>
+		                            <option value='5'>V.Valparaiso</option>
+		                            <option value='13' selected="selected">RM.Metropolitana de Santiago</option>
+		                            <option value='6'>VI.O'Higgins</option>
+		                            <option value='7'>VII.Maule</option>
+		                            <option value='8'>VIII.Bío-Bío</option>
+		                            <option value='9'>IX.La Araucanía</option>
+		                            <option value='10'>X.Los Lagos</option>
+		                            <option value='11'>XI.Aysén</option>
+		                            <option value='12'>XII.Magallanes</option>
+		                            <option value='14'>VIV.Los Ríos</option>
+		                            <option value='15'>XV.Arica y Parinacota</option>
+								</select>
+							</div>
 						</div>
-						</div>
-						
-						</div>
+						<div class="control-group">
+							<label>Comuna</label>
+							<div class="controls">
+								<select class="form-control">
+									<option>Santiago centro</option>
+									<option>Sprinfield</option>
+								</select>
+							</div>
+						</div>						
 						<BR>
 						<div class="control-group">						
 							<div class="controls">
@@ -66,10 +70,9 @@
 						</div>
 					</form>
 				</div>
-			<!--/panel content-->
-			</div>                       
-		</div>
-		<hr>                    
+			</div>
+			<!--/panel content-->                   
+		</div>		               
 	</div>
 			<!--/col-->
 		<div class="col-md-6">

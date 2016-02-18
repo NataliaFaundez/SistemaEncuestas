@@ -54,7 +54,7 @@
                                    echo '<li><a href="/sistema/clientes">Sistema</a></li>';
                                }
                                if ($user->encuestador) {
-                                   echo '<li><a href="/encuestador">Encuesador</a></li>';
+                                   echo '<li><a href="/encuestador">Encuestador</a></li>';
                                }
                                if ($user->admin) {
                                    echo '<li><a href="/cliente/administrador">Administrador</a></li>';
@@ -95,7 +95,7 @@
                             <ul class="nav nav-stacked collapse in" id="userMenu">
                                 <li class="active"> <a href="/encuestador1"><i class="glyphicon glyphicon-home"></i> 
                                     Ver encuesta</a></li>
-                                <li><a href="/encuestador2"><i class="glyphicon glyphicon-pencil"></i> 
+                                <li><a href="/encuestador2"><i class="glyphicon glyphicon-envelope"></i> 
                                     Ingresar encuesta</a></li>                                
                             </ul>
                         </li>  

@@ -51,7 +51,7 @@
 						           echo '<li><a href="/sistema/clientes">Sistema</a></li>';
 						       }
 						       if ($user->encuestador) {
-						           echo '<li><a href="/encuestador">Encuesador</a></li>';
+						           echo '<li><a href="/encuestador">Encuestador</a></li>';
 						       }
 						       if ($user->admin) {
 						           echo '<li><a href="/cliente/administrador">Administrador</a></li>';

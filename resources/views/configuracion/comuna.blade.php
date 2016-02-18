@@ -1,5 +1,10 @@
 @extends('cliente.layout_configuracion')
 
+
+@section('menu_superior')
+    @include('menus.menu_principal', ["rol" => "admin"])
+@endsection
+
 @section('content')
 
 <div class="row">

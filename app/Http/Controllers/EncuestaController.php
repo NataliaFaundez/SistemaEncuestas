@@ -7,6 +7,13 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use Illuminate\Support\Facades\Validator;
+use App\Region;
+use App\Comuna;
+use App\Proyecto;
+
+
+
 class EncuestaController extends Controller
 {
     //
@@ -15,6 +22,7 @@ class EncuestaController extends Controller
 
         
          $validator = Validator::make($request->all(), [
+            'proyecto_id'=>'required|exists:proyectos,id '
             'folio_a'=>'required|numeric',
             'folio_b'=>'required|digits:1',
             'rut_encuestador'  =>'required',
@@ -22,43 +30,35 @@ class EncuestaController extends Controller
             'numero'  =>'required|numeric',
             'block'  =>'required',
             'departamento'  =>'required',
+            'region_id' =>'required|exists:regiones,id'
+            'comuna_id' =>'required|exists:comunas,id'
             'telefono'  =>'required|numeric',
             'celular'  =>'required|numeric',
             'contacto1'  =>'required|alpha',
             'contacto2'  =>'required|alpha',
             
         ]);
-    
+
         if ($validator->fails())
         {
-            return view('encuesta.add', ["errors" => $validator->errors()->all()]);
-        }
+            $encuestas = Encuesta::all();
+            return view('encuestador2', ["encuestas" => $encuestas,"errors" => $validator->errors()->all()]);
+        } 
+     
+        Encuesta::create($inputs);
+        return redirect('/encuestador1');
 
-        $inputs = $request->all();
+     }
 
-        $user = Auth::user();
+     public function Index(){
+        $encuestas = Encuesta::with("proyecto")->get();
+        $encuestas = Encuesta::with("comuna")->get();
 
-        $inputs["validador_id"] = $user->id;
-
-        Encuesta::create($inputs);       
-
-        return redirect('encuestas');
+        return view('encuestador1', ["encuestas" => $encuestas,
+                    "proyectos"=> Proyecto::all()]),"comunas"=> Comuna::all()];
     }
 
-    public function Index(){
-        $encuestas = Encuesta::all();
-        return view('encuesta.index', ["encuestas" => $encuestas]);
-    }
 
-//solo se manda una encuesta
-    public function Mostrar($id){
-        $encuesta = Encuesta::findOrFail($id);
-        return view('encuesta.mostrar', ["encuesta" => $encuesta]);
-    }
-
-    public function Eliminar($id){       
-        $encuesta = Encuesta::findOrFail($id);
-        $encuesta->delete();
-        return redirect('encuestas');
-    }
 }
+    
+      
